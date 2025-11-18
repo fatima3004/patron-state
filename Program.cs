@@ -1,11 +1,12 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using System.Reflection.Metadata;
+using estado;
 
-using cadenaderesponsabilidad;
-
-Proceso p = new PesadoProceso();
-Proceso p2 = new CalidadProceso();
-p.SigProceso(p2);
-
-Solicitud s = new Solicitud("pedido 1",TipoSolicitud.Barata,10, 15, 1);
-p.Procesar(s);
+Documento d = new Documento("El quijote");
+d.Mostrar();
+d.Publicar();
+d.Mostrar();
+d.Publicar();
+d.Mostrar();
+d.Publicar();
 
